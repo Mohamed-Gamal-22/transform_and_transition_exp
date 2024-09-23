@@ -1,0 +1,108 @@
+body {
+  font-family: "Quicksand", sans-serif;
+}
+.parent {
+  width: 80%;
+  margin: auto;
+  margin-top: 50px;
+}
+
+.item {
+  position: relative;
+  overflow: hidden;
+  width: 25%;
+  float: left;
+}
+.clear {
+  clear: both;
+}
+
+.item img {
+  width: 100%;
+  transition: transform 1s 1s;
+  -webkit-transition: transform 1s 1s;
+  -moz-transition: transform 1s 1s;
+  -ms-transition: transform 1s 1s;
+  -o-transition: transform 1s 1s;
+}
+
+.item:hover .content {
+  opacity: 1;
+  transform: rotate(360deg);
+  -webkit-transform: rotate(360deg);
+  -moz-transform: rotate(360deg);
+  -ms-transform: rotate(360deg);
+  -o-transform: rotate(360deg);
+}
+
+.item:hover img {
+  transform: scale(1.2);
+  -webkit-transform: scale(1.2);
+  -moz-transform: scale(1.2);
+  -ms-transform: scale(1.2);
+  -o-transform: scale(1.2);
+}
+
+.content {
+  transition: opacity 1s, transform 1s;
+  text-align: center;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 255, 76, 0.73);
+  opacity: 0;
+  -webkit-transition: opacity 1s, transform 1s;
+  -moz-transition: opacity 1s, transform 1s;
+  -ms-transition: opacity 1s, transform 1s;
+  -o-transition: opacity 1s, transform 1s;
+}
+.item:hover .content h2 {
+  transform: translate(0);
+  -webkit-transform: translate(0);
+  -moz-transform: translate(0);
+  -ms-transform: translate(0);
+  -o-transform: translate(0);
+}
+.item:hover .content p {
+  transform: translate(0);
+  -webkit-transform: translate(0);
+  -moz-transform: translate(0);
+  -ms-transform: translate(0);
+  -o-transform: translate(0);
+}
+
+.content h2 {
+  transition: transform 1s 2s;
+  color: #fff;
+  background-color: purple;
+  margin: 0;
+  padding: 5px;
+  transform: translate(120%);
+  -webkit-transform: translate(120%);
+  -moz-transform: translate(120%);
+  -ms-transform: translate(120%);
+  -o-transform: translate(120%);
+  -webkit-transition: transform 1s 2s;
+  -moz-transition: transform 1s 2s;
+  -ms-transition: transform 1s 2s;
+  -o-transition: transform 1s 2s;
+}
+
+.content p {
+  transition: transform 1s 3s;
+  transform: translate(100%);
+  -webkit-transform: translate(100%);
+  -moz-transform: translate(100%);
+  -ms-transform: translate(100%);
+  -o-transform: translate(100%);
+  -webkit-transition: transform 1s 3s;
+  -moz-transition: transform 1s 3s;
+  -ms-transition: transform 1s 3s;
+  -o-transition: transform 1s 3s;
+}
+
+.content p {
+  margin-top: 50px;
+}
